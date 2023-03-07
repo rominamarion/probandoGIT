@@ -36,4 +36,11 @@ Git
 -git diff --staged (cambios en la etapa de staged)
 -git log --oneline (muestra el historial de commits con un identificador junto al mensaje de los commits)
 -git branch (para ver en que rama nos encontramos)
--
+-git checkout -b <nombre de la rama> (para crear una nueva rama de trabajo)
+-cat <nombre del archivo> (para ver el contenido del archivo)
+-git checkout <rama> (para cambiar de rama)
+-git merge <rama> (para traer esa rama a la rama actual)
+4- Subir a GITHub:
+-git remote add origin <https://github.com/rominamarion/probandoGIT.git> (para crear un nuevo repositorio)
+-git push -u origin <rama> (para crear una rama nueva en GITHub y subir cambios)
+-git push (para subir cambios a la rama)
