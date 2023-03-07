@@ -1,0 +1,25 @@
+Git
+1- Configuración inicial de Git:
+-Abrir la consola y escribir git --version (para checkear la versión actual)
+-git config --global (para que la configuración sea global y no por proyecto) user.name "Romina Marion"
+-git config --global user.email rominaancaten@hotmail.com
+2- Configuración del editor de texto:
+-git config --global core.editor "code --wait"
+-git config --global -e (aca se abre el editor, en este caso el VSCode)
+-git config --global core.autocrlf true (para los saltos de línea, si es linux/mac en lugar de true se pone input)
+-git config -h (listado de opciones para la configuración)
+3- Comandos de GIT:
+-ls (listado de carpetas o directorios)
+-pwd (indica dónde nos encontramos)
+-cd <directorio o carpeta> (para navegar por las carpetas o directorios)
+-cd .. (pasa salir del directorio y volver a uno anterior o más arriba)
+-mkdir <directorio nuevo> (para crear una nueva carpeta o directorio)
+-git init (para inicializar un repositorio nuevo en Git. El .git indica que está oculto)
+-ls -a (para poder ver archivos y directorios ocultos, como por ej .git)
+-cd .git (para ubicarme en el directorio)
+-ls -a (para ver todos los archivos que se utilizan en Git para poder gestionar los proyectos. Es un DETALLE DE IMPLEMENTACIÓN. Aquí se van a almacenar las distintas versiones, ramas y commits)
+-code . (abre los archivos que se encuentran en la carpeta en la que estoy posicionado)
+-git status (muestra el estado actual del repositorio)
+-git add ("nombre del archivo","#.txt" agrega todos los archivos con esa extensión, "." agrega todos los archivos)
+-git add <nombre1> <nombre2> (para añadir 2 archivos, tienen que estar separados por un espacio)
+-git commit -m "MENSAJE CON SENTIDO" (para "comprometer" el archivo)
